@@ -1,0 +1,7 @@
+<p>Animais:</p>
+<ul>
+  <li *ngFor="let animal of animals">
+    Nome: <a routerLink="/list/{{ animal.id }}">{{ animal.name }}</a>
+    <button (click)="handleDelete(animal.id)">Excluir</button>
+  </li>
+</ul>
